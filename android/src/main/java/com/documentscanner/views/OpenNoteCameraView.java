@@ -328,7 +328,7 @@ public class OpenNoteCameraView extends JavaCameraView implements PictureCallbac
         param = mCamera.getParameters();
 
         Size pSize = getMaxPreviewResolution();
-        param.setPreviewSize(pSize.width, pSize.height);
+        //param.setPreviewSize(pSize.width, pSize.height);
         param.setWhiteBalance(Camera.Parameters.WHITE_BALANCE_AUTO);
         float previewRatio = (float) pSize.width / pSize.height;
 
