@@ -292,7 +292,7 @@ public class OpenNoteCameraView extends JavaCameraView implements PictureCallbac
             Log.d(TAG, "supported picture resolution: " + r.width + "x" + r.height + " ratio: " + pictureRatio);
             int resolutionPixels = r.width * r.height;
 
-            if (resolutionPixels > ratioMaxPixels && pictureRatio == previewRatio) {
+            if (resolutionPixels > ratioMaxPixels) {
                 ratioMaxPixels = resolutionPixels;
                 ratioCurrentMaxRes = r;
             }
