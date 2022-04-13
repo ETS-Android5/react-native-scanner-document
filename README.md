@@ -8,18 +8,6 @@ Live document detection library. Returns either a URI of the captured image, all
 
 ## Getting started
 
-Version `>=2.0.0` is thinking to work with React Native >= 0.60
-
-> Use [version `1.6.2`](https://github.com/Woonivers/react-native-document-scanner/tree/v1.6.2) if you are using React Native 0.59
-
-Install the library using either yarn:
-
-```sh
-yarn add @adrianowerpel/react-native-scanner-document`
-```
-
-or npm:
-
 ```sh
 npm install @adrianowerpel/react-native-scanner-document
 ```
@@ -38,7 +26,7 @@ If you do not have it already in your project, you must link openCV in your `set
 
 ```java
 include ':openCVLibrary310'
-project(':openCVLibrary310').projectDir = new File(rootProject.projectDir,'../node_modules/@adrianowerpel/react-native-scanner-document/android/openCVLibrary310')
+project(':openCVLibrary310').projectDir = new File(rootProject.projectDir,'../node_modules/react-native-scanner-document/android/openCVLibrary310')
 ```
 
 #### In android/app/src/main/AndroidManifest.xml
@@ -67,7 +55,7 @@ Add Camera permissions request:
 import React, { Component, useRef } from "react"
 import { View, Image } from "react-native"
 
-import DocumentScanner from "@adrianowerpel/react-native-scanner-document"
+import DocumentScanner from "react-native-scanner-document"
 
 function YourComponent(props) {
   return (
