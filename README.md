@@ -1,8 +1,4 @@
-![Demo gif](https://raw.githubusercontent.com/Michaelvilleneuve/react-native-document-scanner/master/images/demo.gif)
-
-# `@woonivers/react-native-document-scanner`
-
-[![CircleCI Status](https://img.shields.io/circleci/project/github/Woonivers/react-native-document-scanner/master.svg)](https://circleci.com/gh/Woonivers/workflows/react-native-document-scanner/tree/master) ![Supports Android and iOS](https://img.shields.io/badge/platforms-android%20|%20ios%20-lightgrey.svg) ![MIT License](https://img.shields.io/npm/l/@react-native-community/netinfo.svg)
+# `@adrianowerpel/react-native-scanner-document`
 
 Live document detection library. Returns either a URI of the captured image, allowing you to easily store it or use it as you wish!
 
@@ -19,16 +15,14 @@ Version `>=2.0.0` is thinking to work with React Native >= 0.60
 Install the library using either yarn:
 
 ```sh
-yarn add @woonivers/react-native-document-scanner`
+yarn add @adrianowerpel/react-native-scanner-document`
 ```
 
 or npm:
 
 ```sh
-npm install @woonivers/react-native-document-scanner --save
+npm install @adrianowerpel/react-native-scanner-document
 ```
-
-Remember, this library uses your device's camera, **it cannot run on a simulator** and you must request **camera permission** by your own.
 
 ### iOS Only
 
@@ -44,7 +38,7 @@ If you do not have it already in your project, you must link openCV in your `set
 
 ```java
 include ':openCVLibrary310'
-project(':openCVLibrary310').projectDir = new File(rootProject.projectDir,'../node_modules/@woonivers/react-native-document-scanner/android/openCVLibrary310')
+project(':openCVLibrary310').projectDir = new File(rootProject.projectDir,'../node_modules/@adrianowerpel/react-native-scanner-document/android/openCVLibrary310')
 ```
 
 #### In android/app/src/main/AndroidManifest.xml
@@ -73,7 +67,7 @@ Add Camera permissions request:
 import React, { Component, useRef } from "react"
 import { View, Image } from "react-native"
 
-import DocumentScanner from "@woonivers/react-native-document-scanner"
+import DocumentScanner from "@adrianowerpel/react-native-scanner-document"
 
 function YourComponent(props) {
   return (
@@ -91,8 +85,6 @@ function YourComponent(props) {
   )
 }
 ```
-
-Full example in [example folder](https://github.com/Woonivers/react-native-document-scanner/tree/master/example).
 
 ## Properties
 
@@ -166,10 +158,4 @@ If you want to use saveInAppDocument options, then don't forget to add those raw
 <key>LSSupportsOpeningDocumentsInPlace</key>
 <true/>
 ```
-
-# Contributors
-
-## Set up dev environment
-
-[Medium article](https://medium.com/@charpeni/setting-up-an-example-app-for-your-react-native-library-d940c5cf31e4)
 
