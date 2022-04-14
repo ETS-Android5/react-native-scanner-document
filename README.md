@@ -1,4 +1,4 @@
-# `@adrianowerpel/react-native-scanner-document`
+# `react-native-scanner-document`
 
 Live document detection library. Returns either a URI of the captured image, allowing you to easily store it or use it as you wish!
 
@@ -9,7 +9,7 @@ Live document detection library. Returns either a URI of the captured image, all
 ## Getting started
 
 ```sh
-npm install @adrianowerpel/react-native-scanner-document
+npm install react-native-scanner-document
 ```
 
 ### iOS Only
